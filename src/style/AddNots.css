@@ -66,7 +66,9 @@
 
 @media only screen and (max-width:768px) {
   .addnots {
+
     width: 60%;
+
   }
 
 }
@@ -74,7 +76,30 @@
 @media only screen and (max-width:578px) {
   .addnots {
     width: 90%;
+    z-index: 1000;
+    padding:  12px 8px;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-top: 3px solid;
+
   }
+  .addnots button{
+    width: 45%;
+  }
+  .addnots-button {
+    top:7px;
+    right: 5px;
+  }
+  .addnots-button .button{
+    padding: 10px;
+  }
+
+  .addnots select{
+    padding: 4px 2px;
+    width: max-content;
+    height: max-content;
+  }
+
 }
 
 @media only screen and (max-width:360px) {

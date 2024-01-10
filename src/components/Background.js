@@ -13,8 +13,8 @@ export default function Background({ mode }) {
                     <span className='flex justify-center'>
                         <img src={img1} alt=" erf dsrfrt" className='h-44 w-44 mb-5' />
                     </span>
-                    <h1 className='text-[13vw] leading-none tracking-tighter font-semibold text-center'>Notes.</h1>
-                    <p className='backround-text-desktop text-center font-medium text-[2vw] mt-10 leading-10'>Capture your Thoughts or Detailed notes. <br /> Your notes are always up to date on <br />  any device and on tne web</p>
+                    <h1 className='text-[13vw] leading-none tracking-tighter font-semibold text-center'>Notes<span style={{color:'red' }}>Bot</span></h1>
+                    <p className='backround-text-desktop text-center font-medium text-[2vw] mt-10 leading-10'>Capture your Thoughts or Detailed notes. <br /> Your notes are always up to date on <br />  any device and on the web</p>
                     <p className='backround-text-moblie text-center font-medium text-[2vw] mt-10 leading-10'>Capture your Thoughts or Detailed notes. Your notes are always up to date on any device and on the web</p>
                 </div>
             </div>

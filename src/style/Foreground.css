@@ -22,6 +22,9 @@
   position: relative;
   display: inline-block;
 }
+.card_tooltip:hover{
+  height: max-content;
+}
 
 .card_tooltip .card-text {
   width: max-content;
@@ -50,7 +53,19 @@
     left: 82%;
     margin-left: -60px;
   }
+  .cards{
+    padding: 28px 10px;
+  }
+  .cards .title{
+    padding-bottom: 0px;
+  }
 
+  .nots-cards{
+    padding: 28px 10px;
+  }
+  .nots-cards .title{
+    padding-bottom: 8px;
+  }
 
 }
 

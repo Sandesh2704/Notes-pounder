@@ -15,6 +15,10 @@ export default function AddNots({ addnots, mode,  modehandle }) {
   const [showNotsForm, setshowNotsFrom] = useState(false)
   const haddleOnclick = () => {
     setshowNotsFrom(current => !current)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
 
@@ -100,26 +104,26 @@ export default function AddNots({ addnots, mode,  modehandle }) {
 
      
 
-      <div className='addnots-button z-[100]  fixed grid gap-1 top-5 right-3 '>
+      <div className='addnots-button z-[100]  fixed grid gap-1 top-5 right-3 justify-center'>
       <span className='  rounded-full  w-14 h-14 flex justify-center item-center '>
                     <img src={img1} alt=" erf dsrfrt" className=' ' />
                     </span>
         <div className="tooltip">
           <button onClick={haddleOnclick} 
-          className="button bg-red-600 rounded-full p-3 flex justify-center item-center"><MdOutlineAdd size='2rem' />
+          className="button bg-red-600 rounded-full p-3 flex justify-center item-center text-3xl"><MdOutlineAdd  />
           </button>
            {div1Visible && <span className={`tooltiptext div1 ${div1Visible ? 'visible' : 'hidden'}`}>Add your nots</span> }
         </div>
 
         <div className="tooltip">
           <button onClick={haddleOnclick}
-           className="button bg-sky-600 rounded-full p-3 flex justify-center item-center"><FaCloudUploadAlt size='2rem' />
+           className="button bg-sky-600 rounded-full p-3 flex justify-center item-center text-3xl"><FaCloudUploadAlt  />
           </button>
           {div2Visible && <span  className={`tooltiptext div2 ${div2Visible ? 'visible' : 'hidden'}`}> Upload image option</span> }
         </div>
         <div className="tooltip">
-          <button onClick={modehandle} className="button rounded-full p-3 flex justify-center item-center " 
-          style={{ backgroundColor: mode === 'dark' ? '#bac4c8' : '#334555', color: mode === 'dark' ? 'black' : 'white' }}>{mode === 'dark' ? <MdSunny  size='2rem'/> : <BsFillMoonStarsFill  size='2rem' />}
+          <button onClick={modehandle} className="button rounded-full p-3 flex justify-center item-center text-3xl " 
+          style={{ backgroundColor: mode === 'dark' ? '#bac4c8' : '#334555', color: mode === 'dark' ? 'black' : 'white' }}>{mode === 'dark' ? <MdSunny  /> : <BsFillMoonStarsFill  />}
           </button>
           {div3Visible && <span  className={`tooltiptext div3 ${div3Visible ? 'visible' : 'hidden'}`}>Change theme light into Dark</span> }
         </div>
@@ -181,7 +185,7 @@ export default function AddNots({ addnots, mode,  modehandle }) {
                 </div>
 
 
-                <select name='selectColor' onChange={handleChange} value={notsData.selectColor} className='text-black p-2 ' style={{ backgroundColor: '#E6E6FA' }} >
+                <select name='selectColor' onChange={handleChange} value={notsData.selectColor} className='text-black p-2 w-max' style={{ backgroundColor: '#E6E6FA' }} >
                   <option value="" >Select a card color</option>
                   {colorOptions.map((colorOption, index) => (
                     <option key={index} value={colorOption.value} style={{ backgroundColor: colorOption.value }}>
