@@ -1,0 +1,59 @@
+.nots-cards {
+  box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+  transition: 0.1s ease-in-out;
+}
+
+.cards {
+  box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+}
+
+.container:hover .nots-cards p {
+  margin-bottom: 50px;
+}
+
+.container .nots-cards:hover {
+  transition: 0.1s ease-in-out;
+  height: max-content;
+  filter: blur(0px);
+}
+
+
+.card_tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.card_tooltip .card-text {
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px 6px 6px 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: 100%;
+}
+@media only screen and (max-width:578px) {
+  .card_tooltip .card-text {
+    width: 120px;
+    height: max-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px 0px 6px 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 102%;
+    left: 82%;
+    margin-left: -60px;
+  }
+
+
+}
+
+@media only screen and (max-width:360px) {}
+
+@media only screen and (max-width:340px) {}
